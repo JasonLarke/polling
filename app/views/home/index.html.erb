@@ -1,0 +1,7 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<% @polls.each do |poll| %>
+	<h2><%= poll.question %></h2>
+	<div class="poll_desc"><%= raw poll.render_html() %></div>
+<% end %>
